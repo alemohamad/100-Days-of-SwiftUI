@@ -15,3 +15,6 @@
   * Creating pickers in a form
   * Adding a segmented control for tip percentages
   * Calculating the total per person
+* `Day 18 - Project 1, part three`
+  * Wrap up
+  * Review for Project 1: WeSplit
