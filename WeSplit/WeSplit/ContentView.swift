@@ -18,7 +18,11 @@ struct ContentView: View {
     
     var totalAmount: Double {
         let tipSelection = Double(tipPercentages[tipPercentage])
-        let orderAmount = Double(checkAmount.replacingOccurrences(of: ",", with: ".")) ?? 0
+//        let orderAmount = Double(checkAmount) ?? 0
+        
+        var sanitisedAmount = checkAmount.replacingOccurrences(of: Locale.current.decimalSeparator ?? ".", with: ".")
+        sanitisedAmount = sanitisedAmount.replacingOccurrences(of: Locale.current.groupingSeparator ?? "", with: "")
+        let orderAmount = Double(sanitisedAmount) ?? 0
         
         let tipValue = orderAmount / 100 * tipSelection
         let grandTotal = orderAmount + tipValue
