@@ -18,3 +18,4 @@
 * `Day 18 - Project 1, part three`
   * Wrap up
   * Review for Project 1: WeSplit
+* `Day 19 - Challenge day`
