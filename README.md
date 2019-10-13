@@ -19,3 +19,10 @@
   * Wrap up
   * Review for Project 1: WeSplit
 * `Day 19 - Challenge day`
+* `Day 20 - Project 2, part 1`
+  * Guess the Flag: Introduction
+  * Using stacks to arrange views
+  * Colors and frames
+  * Gradients
+  * Buttons and images
+  * Showing alert messages
