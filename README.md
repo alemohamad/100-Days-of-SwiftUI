@@ -26,3 +26,7 @@
   * Gradients
   * Buttons and images
   * Showing alert messages
+* `Day 21 - Project 2, part 2`
+  * Stacking up buttons
+  * Showing the player’s score with an alert
+  * Styling our flags
