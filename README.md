@@ -33,3 +33,18 @@
 * `Day 22 - Project 2, part 3`
   * Wrap up
   * Review for Project 2: Guess the Flag
+* `Day 23 - Project 3, part 1`
+  * Views and modifiers: Introduction
+  * Why does SwiftUI use structs for views?
+  * What is behind the main SwiftUI view?
+  * Why modifier order matters
+  * Why does SwiftUI use “some View” for its view type?
+  * Conditional modifiers
+  * Environment modifiers
+  * Views as properties
+  * View composition
+  * Custom modifiers
+  * Custom containers
+* `Day 24 - Project 3, part 2`
+  * Wrap up
+  * Review for Project 3: Views and Modifiers
