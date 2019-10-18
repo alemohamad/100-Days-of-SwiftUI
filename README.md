@@ -48,3 +48,7 @@
 * `Day 24 - Project 3, part 2`
   * Wrap up
   * Review for Project 3: Views and Modifiers
+* `Day 25 - Milestone: Projects 1-3`
+  * What you learned
+  * Key points
+  * Challenge
