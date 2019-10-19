@@ -52,3 +52,9 @@
   * What you learned
   * Key points
   * Challenge
+* `Day 26 - Project 4, part 1`
+  * BetterRest: Introduction
+  * Entering numbers with Stepper
+  * Selecting dates and times with DatePicker
+  * Working with dates
+  * Training a model with Create ML
