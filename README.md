@@ -58,3 +58,7 @@
   * Selecting dates and times with DatePicker
   * Working with dates
   * Training a model with Create ML
+* `Day 27 - Project 4, part 2`
+  * Building a basic layout
+  * Connecting SwiftUI to Core ML
+  * Cleaning up the user interface
