@@ -65,3 +65,8 @@
 * `Day 28 - Project 4, part 3`
   * Wrap up
   * Review for Project 4: BetterRest
+* `Day 29 - Project 5, part 1`
+  * Word Scramble: Introduction
+  * Introducing List, your best friend
+  * Loading resources from your app bundle
+  * Working with strings
