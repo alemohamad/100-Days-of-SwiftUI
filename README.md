@@ -70,3 +70,7 @@
   * Introducing List, your best friend
   * Loading resources from your app bundle
   * Working with strings
+* `Day 30 - Project 5, part 2`
+  * Adding to a list of words
+  * Running code when our app launches
+  * Validating words with UITextChecker
