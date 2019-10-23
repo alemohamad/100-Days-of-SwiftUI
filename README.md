@@ -74,3 +74,6 @@
   * Adding to a list of words
   * Running code when our app launches
   * Validating words with UITextChecker
+* `Day 31 - Project 5, part 3`
+  * Wrap up
+  * Review for Project 5: Word Scramble
