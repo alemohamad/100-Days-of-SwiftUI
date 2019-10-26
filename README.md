@@ -77,3 +77,17 @@
 * `Day 31 - Project 5, part 3`
   * Wrap up
   * Review for Project 5: Word Scramble
+* `Day 32 - Project 6, part 1`
+  * Animation: Introduction
+  * Creating implicit animations
+  * Customizing animations in SwiftUI
+  * Animating bindings
+  * Creating explicit animations
+* `Day 33 - Project 6, part 2`
+  * Controlling the animation stack
+  * Animating gestures
+  * Showing and hiding views with transitions
+  * Building custom transitions using ViewModifier
+* `Day 34 - Project 6, part 3`
+  * Wrap up
+  * Review for Project 6: Animation

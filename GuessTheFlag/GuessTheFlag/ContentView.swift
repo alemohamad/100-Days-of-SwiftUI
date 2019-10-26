@@ -30,6 +30,10 @@ struct ContentView: View {
     @State private var score = 0
     @State private var scoreMessage = ""
     
+    @State private var flagAngle = [0.0, 0.0, 0.0]
+    @State private var flagOpacity = [1.0, 1.0, 1.0]
+    @State private var flagBlur: [CGFloat] = [0, 0, 0]
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
@@ -50,6 +54,10 @@ struct ContentView: View {
                     }) {
                         FlagImage(image: self.countries[number])
                     }
+                    .rotation3DEffect(.degrees(self.flagAngle[number]), axis: (x: 0, y: 1, z: 0))
+                    .opacity(self.flagOpacity[number])
+                    .blur(radius: self.flagBlur[number])
+                    .animation(.default)
                 }
                 
                 Text("Your score is \(score)")
@@ -73,10 +81,14 @@ struct ContentView: View {
             score += 1
             scoreTitle = "Correct!"
             scoreMessage = "Your score is \(score)"
+            
+            correctAnimation()
         } else {
             score -= 1
             scoreTitle = "Wrong!"
             scoreMessage = "That's the flag of \(countries[number])"
+            
+            wrongAnimation()
         }
         
         showingScore = true
@@ -85,6 +97,28 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        
+        flagAngle = [0.0, 0.0, 0.0]
+        flagOpacity = [1.0, 1.0, 1.0]
+        flagBlur = [0, 0, 0]
+    }
+    
+    func correctAnimation() {
+        for flag in 0...2 {
+            if flag == correctAnswer {
+                flagAngle[flag] = 360.0
+            } else {
+                flagOpacity[flag] = 0.25
+            }
+        }
+    }
+    
+    func wrongAnimation() {
+        for flag in 0...2 {
+            if flag != correctAnswer {
+                flagBlur[flag] = 6
+            }
+        }
     }
 }
 
