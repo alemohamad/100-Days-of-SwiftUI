@@ -91,3 +91,7 @@
 * `Day 34 - Project 6, part 3`
   * Wrap up
   * Review for Project 6: Animation
+* `Day 35 - Milestone: Projects 4-6`
+  * What you learned
+  * Key points
+  * Challenge
