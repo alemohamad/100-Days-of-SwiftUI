@@ -126,3 +126,6 @@
   * Showing mission details with ScrollView and GeometryReader
   * Merging Codable structs using first(where:)
   * Fixing problems with buttonStyle() and layoutPriority()
+* `Day 42 - Project 8, part 4`
+  * Wrap up
+  * Review for Project 8: Moonshot
