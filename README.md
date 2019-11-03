@@ -122,3 +122,7 @@
   * Loading a specific kind of Codable data
   * Using generics to load any kind of Codable data
   * Formatting our mission view
+* `Day 41 - Project 8, part 3`
+  * Showing mission details with ScrollView and GeometryReader
+  * Merging Codable structs using first(where:)
+  * Fixing problems with buttonStyle() and layoutPriority()
