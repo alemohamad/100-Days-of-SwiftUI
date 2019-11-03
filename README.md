@@ -118,3 +118,7 @@
   * How ScrollView lets us work with scrolling data
   * Pushing new views onto the stack using NavigationLink
   * Working with hierarchical Codable data
+* `Day 40 - Project 8, part 2`
+  * Loading a specific kind of Codable data
+  * Using generics to load any kind of Codable data
+  * Formatting our mission view
