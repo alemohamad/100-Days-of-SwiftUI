@@ -109,6 +109,12 @@
   * Sharing an observed object with a new view
   * Making changes permanent with UserDefaults
   * Final polish
-* `Day 37 - Project 7, part 3`
+* `Day 38 - Project 7, part 3`
   * Wrap up
   * Review for Project 7: iExpense
+* `Day 39 - Project 8, part 1`
+  * Moonshot: Introduction
+  * Resizing images to fit the screen using GeometryReader
+  * How ScrollView lets us work with scrolling data
+  * Pushing new views onto the stack using NavigationLink
+  * Working with hierarchical Codable data
