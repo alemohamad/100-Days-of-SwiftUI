@@ -13,6 +13,7 @@ struct AddView: View {
     
     @ObservedObject var expenses: Expenses
     
+    @State private var showAlert = false
     @State private var name = ""
     @State private var type = "Personal"
     @State private var amount = ""
@@ -33,15 +34,23 @@ struct AddView: View {
                     .keyboardType(.numberPad)
             }
             .navigationBarTitle("Add new expense")
-        .navigationBarItems(trailing:
-            Button("Save") {
-                if let actualAmount = Int(self.amount) {
-                    let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
-                    self.expenses.items.append(item)
-                    self.presentationMode.wrappedValue.dismiss()
+            .navigationBarItems(trailing:
+                Button("Save") {
+                    if let actualAmount = Int(self.amount) {
+                        let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
+                        self.expenses.items.append(item)
+                        self.presentationMode.wrappedValue.dismiss()
+                    } else {
+                        self.showAlert = true
+                    }
                 }
+            )
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Invalid amount"),
+                      message: Text("The amount has to be a number."),
+                      dismissButton: .default(Text("OK")))
             }
-        )}
+        }
     }
 }
 

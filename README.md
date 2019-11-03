@@ -109,3 +109,6 @@
   * Sharing an observed object with a new view
   * Making changes permanent with UserDefaults
   * Final polish
+* `Day 37 - Project 7, part 3`
+  * Wrap up
+  * Review for Project 7: iExpense
