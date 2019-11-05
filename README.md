@@ -129,3 +129,8 @@
 * `Day 42 - Project 8, part 4`
   * Wrap up
   * Review for Project 8: Moonshot
+* `Day 43 - Project 9, part 1`
+  * Drawing: Introduction
+  * Creating custom paths with SwiftUI
+  * Paths vs shapes in SwiftUI
+  * Adding strokeBorder() support with InsettableShape
