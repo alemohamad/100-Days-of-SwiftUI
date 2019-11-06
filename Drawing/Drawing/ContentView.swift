@@ -28,6 +28,18 @@ struct ContentView: View {
                     Image(systemName: "4.circle.fill")
                     Text("InsettableShape")
                 }
+                NavigationLink(destination: FifthTransformingShapeView()) {
+                    Image(systemName: "5.circle.fill")
+                    Text("TransformingShape")
+                }
+                NavigationLink(destination: SixthImagePaintView()) {
+                    Image(systemName: "6.circle.fill")
+                    Text("ImagePaint")
+                }
+                NavigationLink(destination: SeventhMetalRenderingView()) {
+                    Image(systemName: "7.circle.fill")
+                    Text("Metal rendering")
+                }
             }
             .navigationBarTitle(Text("Drawing"))
         }

@@ -134,3 +134,7 @@
   * Creating custom paths with SwiftUI
   * Paths vs shapes in SwiftUI
   * Adding strokeBorder() support with InsettableShape
+* `Day 44 - Project 9, part 2`
+  * Transforming shapes using CGAffineTransform and even-odd fills
+  * Creative borders and fills using ImagePaint
+  * Enabling high-performance Metal rendering with drawingGroup()
