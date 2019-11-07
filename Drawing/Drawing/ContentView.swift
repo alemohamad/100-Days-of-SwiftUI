@@ -12,33 +12,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: FirstPathView()) {
-                    Image(systemName: "1.circle.fill")
-                    Text("Path")
+                NavigationLink(destination: Day43View()) {
+                    Image(systemName: "43.circle")
+                    Text("Part 1")
                 }
-                NavigationLink(destination: SecondPathShapeView()) {
-                    Image(systemName: "2.circle.fill")
-                    Text("Shape Triangle")
+                NavigationLink(destination: Day44View()) {
+                    Image(systemName: "44.circle")
+                    Text("Part 2")
                 }
-                NavigationLink(destination: ThirdPathShapeView()) {
-                    Image(systemName: "3.circle.fill")
-                    Text("Shape Arc")
-                }
-                NavigationLink(destination: FourthShapeView()) {
-                    Image(systemName: "4.circle.fill")
-                    Text("InsettableShape")
-                }
-                NavigationLink(destination: FifthTransformingShapeView()) {
-                    Image(systemName: "5.circle.fill")
-                    Text("TransformingShape")
-                }
-                NavigationLink(destination: SixthImagePaintView()) {
-                    Image(systemName: "6.circle.fill")
-                    Text("ImagePaint")
-                }
-                NavigationLink(destination: SeventhMetalRenderingView()) {
-                    Image(systemName: "7.circle.fill")
-                    Text("Metal rendering")
+                NavigationLink(destination: Day45View()) {
+                    Image(systemName: "45.circle")
+                    Text("Part 3")
                 }
             }
             .navigationBarTitle(Text("Drawing"))
