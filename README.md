@@ -146,3 +146,7 @@
 * `Day 46 - Project 9, part 4`
   * Wrap up
   * Review for Project 9: Drawing
+* `Day 47 - Milestone: Projects 7-9`
+  * What you learned
+  * Key points
+  * Challenge
