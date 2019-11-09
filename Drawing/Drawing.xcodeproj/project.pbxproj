@@ -12,6 +12,9 @@
 		99311E8E2374ADA800F82531 /* Day45View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99311E8D2374ADA800F82531 /* Day45View.swift */; };
 		99311E922374B20100F82531 /* TenthAnimatingComplexShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99311E912374B20100F82531 /* TenthAnimatingComplexShapesView.swift */; };
 		99311E942374D74100F82531 /* EleventhSpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99311E932374D74100F82531 /* EleventhSpirographView.swift */; };
+		99311E962374F37700F82531 /* Day46View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99311E952374F37700F82531 /* Day46View.swift */; };
+		99311E982374F3DF00F82531 /* Challenge12View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99311E972374F3DF00F82531 /* Challenge12View.swift */; };
+		993C6DF92375B3F3000779B1 /* Challenge3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C6DF82375B3F3000779B1 /* Challenge3View.swift */; };
 		994A9C4D23749A1E006FCA7A /* EightSpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994A9C4C23749A1E006FCA7A /* EightSpecialEffectsView.swift */; };
 		9952556A2372C05A00B6330D /* FifthTransformingShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995255692372C05A00B6330D /* FifthTransformingShapeView.swift */; };
 		9952556C2372C43300B6330D /* SixthImagePaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9952556B2372C43300B6330D /* SixthImagePaintView.swift */; };
@@ -37,6 +40,9 @@
 		99311E8D2374ADA800F82531 /* Day45View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day45View.swift; sourceTree = "<group>"; };
 		99311E912374B20100F82531 /* TenthAnimatingComplexShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthAnimatingComplexShapesView.swift; sourceTree = "<group>"; };
 		99311E932374D74100F82531 /* EleventhSpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleventhSpirographView.swift; sourceTree = "<group>"; };
+		99311E952374F37700F82531 /* Day46View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day46View.swift; sourceTree = "<group>"; };
+		99311E972374F3DF00F82531 /* Challenge12View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge12View.swift; sourceTree = "<group>"; };
+		993C6DF82375B3F3000779B1 /* Challenge3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3View.swift; sourceTree = "<group>"; };
 		994A9C4C23749A1E006FCA7A /* EightSpecialEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightSpecialEffectsView.swift; sourceTree = "<group>"; };
 		995255692372C05A00B6330D /* FifthTransformingShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTransformingShapeView.swift; sourceTree = "<group>"; };
 		9952556B2372C43300B6330D /* SixthImagePaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthImagePaintView.swift; sourceTree = "<group>"; };
@@ -112,8 +118,19 @@
 				99311E8C2374AD6D00F82531 /* Day 44 */,
 				99311E8D2374ADA800F82531 /* Day45View.swift */,
 				99311E8F2374AE2100F82531 /* Day 45 */,
+				99311E952374F37700F82531 /* Day46View.swift */,
+				993C6DFA2375B410000779B1 /* Day 46 */,
 			);
 			path = "Days Views";
+			sourceTree = "<group>";
+		};
+		993C6DFA2375B410000779B1 /* Day 46 */ = {
+			isa = PBXGroup;
+			children = (
+				99311E972374F3DF00F82531 /* Challenge12View.swift */,
+				993C6DF82375B3F3000779B1 /* Challenge3View.swift */,
+			);
+			path = "Day 46";
 			sourceTree = "<group>";
 		};
 		9990F0B123716DAE00A6B7D0 = {
@@ -238,12 +255,15 @@
 				9990F0D82371773B00A6B7D0 /* FourthShapeView.swift in Sources */,
 				9952556A2372C05A00B6330D /* FifthTransformingShapeView.swift in Sources */,
 				9990F0D6237176A100A6B7D0 /* ThirdPathShapeView.swift in Sources */,
+				99311E982374F3DF00F82531 /* Challenge12View.swift in Sources */,
 				99311E8B2374ACF600F82531 /* Day44View.swift in Sources */,
+				99311E962374F37700F82531 /* Day46View.swift in Sources */,
 				99311E8E2374ADA800F82531 /* Day45View.swift in Sources */,
 				9990F0D42371734800A6B7D0 /* SecondPathShapeView.swift in Sources */,
 				99311E872374ABBC00F82531 /* Day43View.swift in Sources */,
 				9990F0C223716DAE00A6B7D0 /* ContentView.swift in Sources */,
 				99311E942374D74100F82531 /* EleventhSpirographView.swift in Sources */,
+				993C6DF92375B3F3000779B1 /* Challenge3View.swift in Sources */,
 				9952556E2372C70300B6330D /* SeventhMetalRenderingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

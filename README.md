@@ -143,3 +143,6 @@
   * Animating simple shapes with animatableData
   * Animating complex shapes with AnimatablePair
   * Creating a spirograph with SwiftUI
+* `Day 46 - Project 9, part 4`
+  * Wrap up
+  * Review for Project 9: Drawing

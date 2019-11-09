@@ -24,6 +24,10 @@ struct ContentView: View {
                     Image(systemName: "45.circle")
                     Text("Part 3")
                 }
+                NavigationLink(destination: Day46View()) {
+                    Image(systemName: "46.circle")
+                    Text("Part 4")
+                }
             }
             .navigationBarTitle(Text("Drawing"))
         }
