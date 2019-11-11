@@ -150,3 +150,8 @@
   * What you learned
   * Key points
   * Challenge
+* `Day 49 - Project 10, part 1`
+  * Cupcake Corner: Introduction
+  * Adding Codable conformance for @Published properties
+  * Sending and receiving Codable data with URLSession and SwiftUI
+  * Validating and disabling forms
