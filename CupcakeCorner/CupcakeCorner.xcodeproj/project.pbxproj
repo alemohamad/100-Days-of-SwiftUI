@@ -13,6 +13,9 @@
 		99027C3723796EE700A49D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99027C3623796EE700A49D14 /* Assets.xcassets */; };
 		99027C3A23796EE700A49D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99027C3923796EE700A49D14 /* Preview Assets.xcassets */; };
 		99027C3D23796EE700A49D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99027C3B23796EE700A49D14 /* LaunchScreen.storyboard */; };
+		999B7E19237A9E1100B8E2E3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B7E18237A9E1100B8E2E3 /* Order.swift */; };
+		999B7E1B237A9F9400B8E2E3 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B7E1A237A9F9400B8E2E3 /* AddressView.swift */; };
+		999B7E1D237AA0B700B8E2E3 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B7E1C237AA0B700B8E2E3 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		99027C3923796EE700A49D14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99027C3C23796EE700A49D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99027C3E23796EE700A49D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999B7E18237A9E1100B8E2E3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		999B7E1A237A9F9400B8E2E3 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		999B7E1C237AA0B700B8E2E3 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				99027C3023796EE500A49D14 /* AppDelegate.swift */,
 				99027C3223796EE500A49D14 /* SceneDelegate.swift */,
 				99027C3423796EE500A49D14 /* ContentView.swift */,
+				999B7E1A237A9F9400B8E2E3 /* AddressView.swift */,
+				999B7E1C237AA0B700B8E2E3 /* CheckoutView.swift */,
+				999B7E18237A9E1100B8E2E3 /* Order.swift */,
 				99027C3623796EE700A49D14 /* Assets.xcassets */,
 				99027C3B23796EE700A49D14 /* LaunchScreen.storyboard */,
 				99027C3E23796EE700A49D14 /* Info.plist */,
@@ -148,6 +157,9 @@
 			files = (
 				99027C3123796EE500A49D14 /* AppDelegate.swift in Sources */,
 				99027C3323796EE500A49D14 /* SceneDelegate.swift in Sources */,
+				999B7E1D237AA0B700B8E2E3 /* CheckoutView.swift in Sources */,
+				999B7E1B237A9F9400B8E2E3 /* AddressView.swift in Sources */,
+				999B7E19237A9E1100B8E2E3 /* Order.swift in Sources */,
 				99027C3523796EE500A49D14 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
