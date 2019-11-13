@@ -159,3 +159,6 @@
   * Taking basic order details
   * Checking for a valid address
   * Preparing for checkout
+* `Day 51 - Project 10, part 3`
+  * Encoding an ObservableObject class
+  * Sending and receiving orders over the internet
