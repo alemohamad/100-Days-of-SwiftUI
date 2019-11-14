@@ -162,3 +162,6 @@
 * `Day 51 - Project 10, part 3`
   * Encoding an ObservableObject class
   * Sending and receiving orders over the internet
+* `Day 52 - Project 10, part 4`
+  * Wrap up
+  * Review for Project 10: Cupcake Corner
