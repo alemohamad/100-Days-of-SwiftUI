@@ -165,3 +165,8 @@
 * `Day 52 - Project 10, part 4`
   * Wrap up
   * Review for Project 10: Cupcake Corner
+* `Day 53 - Project 11, part 1`
+  * Bookworm: Introduction
+  * Creating a custom component with @Binding
+  * Using size classes with AnyView type erasure
+  * How to combine Core Data and SwiftUI
