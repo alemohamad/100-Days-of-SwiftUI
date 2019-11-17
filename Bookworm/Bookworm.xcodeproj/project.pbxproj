@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		999A8BDD2381FA9E00165D5A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A8BDC2381FA9E00165D5A /* RatingView.swift */; };
+		999A8BDF2381FC3300165D5A /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */; };
 		99B8A5C6237EA6D700346159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C5237EA6D700346159 /* AppDelegate.swift */; };
 		99B8A5C8237EA6D700346159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C7237EA6D700346159 /* SceneDelegate.swift */; };
 		99B8A5CB237EA6D700346159 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C9237EA6D700346159 /* Bookworm.xcdatamodeld */; };
@@ -14,9 +16,12 @@
 		99B8A5CF237EA6D800346159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B8A5CE237EA6D800346159 /* Assets.xcassets */; };
 		99B8A5D2237EA6D800346159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B8A5D1237EA6D800346159 /* Preview Assets.xcassets */; };
 		99B8A5D5237EA6D800346159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B8A5D3237EA6D800346159 /* LaunchScreen.storyboard */; };
+		99FFCD6D2381D3540088EA70 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FFCD6C2381D3540088EA70 /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		999A8BDC2381FA9E00165D5A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		99B8A5C2237EA6D700346159 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B8A5C5237EA6D700346159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B8A5C7237EA6D700346159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		99B8A5D1237EA6D800346159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99B8A5D4237EA6D800346159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99B8A5D6237EA6D800346159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FFCD6C2381D3540088EA70 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				99B8A5C5237EA6D700346159 /* AppDelegate.swift */,
 				99B8A5C7237EA6D700346159 /* SceneDelegate.swift */,
 				99B8A5CC237EA6D700346159 /* ContentView.swift */,
+				99FFCD6C2381D3540088EA70 /* AddBookView.swift */,
+				999A8BDC2381FA9E00165D5A /* RatingView.swift */,
+				999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */,
 				99B8A5CE237EA6D800346159 /* Assets.xcassets */,
 				99B8A5D3237EA6D800346159 /* LaunchScreen.storyboard */,
 				99B8A5D6237EA6D800346159 /* Info.plist */,
@@ -151,8 +160,11 @@
 			files = (
 				99B8A5C6237EA6D700346159 /* AppDelegate.swift in Sources */,
 				99B8A5CB237EA6D700346159 /* Bookworm.xcdatamodeld in Sources */,
+				999A8BDF2381FC3300165D5A /* EmojiRatingView.swift in Sources */,
 				99B8A5CD237EA6D700346159 /* ContentView.swift in Sources */,
+				999A8BDD2381FA9E00165D5A /* RatingView.swift in Sources */,
 				99B8A5C8237EA6D700346159 /* SceneDelegate.swift in Sources */,
+				99FFCD6D2381D3540088EA70 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

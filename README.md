@@ -170,3 +170,7 @@
   * Creating a custom component with @Binding
   * Using size classes with AnyView type erasure
   * How to combine Core Data and SwiftUI
+* `Day 54 - Project 11, part 2`
+  * Creating books with Core Data
+  * Adding a custom star rating component
+  * Building a list with @FetchRequest
