@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		999A8BDD2381FA9E00165D5A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A8BDC2381FA9E00165D5A /* RatingView.swift */; };
 		999A8BDF2381FC3300165D5A /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */; };
+		999A8BE123820EFA00165D5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A8BE023820EFA00165D5A /* DetailView.swift */; };
 		99B8A5C6237EA6D700346159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C5237EA6D700346159 /* AppDelegate.swift */; };
 		99B8A5C8237EA6D700346159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C7237EA6D700346159 /* SceneDelegate.swift */; };
 		99B8A5CB237EA6D700346159 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99B8A5C9237EA6D700346159 /* Bookworm.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		999A8BDC2381FA9E00165D5A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		999A8BE023820EFA00165D5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		99B8A5C2237EA6D700346159 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B8A5C5237EA6D700346159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B8A5C7237EA6D700346159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				99B8A5C7237EA6D700346159 /* SceneDelegate.swift */,
 				99B8A5CC237EA6D700346159 /* ContentView.swift */,
 				99FFCD6C2381D3540088EA70 /* AddBookView.swift */,
+				999A8BE023820EFA00165D5A /* DetailView.swift */,
 				999A8BDC2381FA9E00165D5A /* RatingView.swift */,
 				999A8BDE2381FC3300165D5A /* EmojiRatingView.swift */,
 				99B8A5CE237EA6D800346159 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B8A5C6237EA6D700346159 /* AppDelegate.swift in Sources */,
+				999A8BE123820EFA00165D5A /* DetailView.swift in Sources */,
 				99B8A5CB237EA6D700346159 /* Bookworm.xcdatamodeld in Sources */,
 				999A8BDF2381FC3300165D5A /* EmojiRatingView.swift in Sources */,
 				99B8A5CD237EA6D700346159 /* ContentView.swift in Sources */,
