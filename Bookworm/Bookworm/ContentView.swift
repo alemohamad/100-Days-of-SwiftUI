@@ -28,6 +28,7 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(book.title ?? "Unkown title")
                                 .font(.headline)
+                                .foregroundColor(book.rating == 1 ? Color.red : Color.primary)
                             Text(book.author ?? "Unkown author")
                                 .foregroundColor(.secondary)
                         }
@@ -43,6 +44,9 @@ struct ContentView: View {
                         self.showingAddScreen.toggle()
                     }) {
                         Image(systemName: "plus")
+                            .padding(5)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                     }
             )
             .sheet(isPresented: $showingAddScreen) {

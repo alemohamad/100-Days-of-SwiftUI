@@ -43,6 +43,15 @@ struct DetailView: View {
                 
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
+                    .padding()
+                
+                HStack {
+                    Text("Rating added: ")
+                        .font(.subheadline)
+                    Text(self.convertToString(date: self.book.date))
+                        .font(.subheadline)
+                        .foregroundColor(.accentColor)
+                }
                 
                 Spacer()
             }
@@ -67,6 +76,16 @@ struct DetailView: View {
         
         presentationMode.wrappedValue.dismiss()
     }
+    
+    func convertToString(date: Date?) -> String {
+        guard let date = date else {
+            return "No date assigned"
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM d, yyyy"
+        return formatter.string(from: date)
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
@@ -79,6 +98,7 @@ struct DetailView_Previews: PreviewProvider {
         book.genre = "Fantasy"
         book.rating = 4
         book.review = "This was a great book; I really enjoyed it."
+        book.date = Date()
 
         return NavigationView {
             DetailView(book: book)
