@@ -182,3 +182,9 @@
 * `Day 56 - Project 11, part 4`
   * Bookworm: Wrap up
   * Review for Project 11: Bookworm
+* `Day 57 - Project 12, part 1`
+  * Core Data: Introduction
+  * Why does \.self work for ForEach?
+  * Creating NSManagedObject subclasses
+  * Conditional saving of NSManagedObjectContext
+  * Ensuring Core Data objects are unique using constraints
