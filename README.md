@@ -188,3 +188,10 @@
   * Creating NSManagedObject subclasses
   * Conditional saving of NSManagedObjectContext
   * Ensuring Core Data objects are unique using constraints
+* `Day 58 - Project 12, part 2`
+  * Filtering @FetchRequest using NSPredicate
+  * Dynamically filtering @FetchRequest with SwiftUI
+  * One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
+* `Day 59 - Project 12, part 3`
+  * Core Data: Wrap up
+  * Review for Project 12: Core Data
