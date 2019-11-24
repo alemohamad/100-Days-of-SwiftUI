@@ -199,3 +199,9 @@
   * What you learned
   * Key points
   * Challenge
+* `Day 61 - Time for Core Data`
+* `Day 62 - Project 13, part 1`
+  * Instafilter: Introduction
+  * How property wrappers become structs
+  * Creating custom bindings in SwiftUI
+  * Showing multiple options with ActionSheet
