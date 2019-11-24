@@ -195,3 +195,7 @@
 * `Day 59 - Project 12, part 3`
   * Core Data: Wrap up
   * Review for Project 12: Core Data
+* `Day 60 - Milestone: Projects 10-12`
+  * What you learned
+  * Key points
+  * Challenge
