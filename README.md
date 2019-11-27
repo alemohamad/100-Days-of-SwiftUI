@@ -211,3 +211,7 @@
 * `Day 64 - Project 13, part 3`
   * Using coordinators to manage SwiftUI view controllers
   * How to save images to the user’s photo library
+* `Day 65 - Project 13, part 4`
+  * Building our basic UI
+  * Importing an image into SwiftUI using UIImagePickerController
+  * Basic image filtering using Core Image
