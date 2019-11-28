@@ -215,3 +215,6 @@
   * Building our basic UI
   * Importing an image into SwiftUI using UIImagePickerController
   * Basic image filtering using Core Image
+* `Day 66 - Project 13, part 5`
+  * Customizing our filter using ActionSheet
+  * Saving the filtered image using UIImageWriteToSavedPhotosAlbum()
