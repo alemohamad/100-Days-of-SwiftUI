@@ -218,3 +218,6 @@
 * `Day 66 - Project 13, part 5`
   * Customizing our filter using ActionSheet
   * Saving the filtered image using UIImageWriteToSavedPhotosAlbum()
+* `Day 67 - Project 13, part 6`
+  * Instafilter: Wrap up
+  * Review for Project 13: Instafilter
