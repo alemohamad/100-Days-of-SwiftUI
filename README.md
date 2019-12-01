@@ -221,3 +221,12 @@
 * `Day 67 - Project 13, part 6`
   * Instafilter: Wrap up
   * Review for Project 13: Instafilter
+* `Day 68 - Project 14, part 1`
+  * Bucket List: Introduction
+  * Adding conformance to Comparable for custom types
+  * Writing data to the documents directory
+  * Switching view states with enums
+* `Day 69 - Project 14, part 2`
+  * Integrating MapKit with SwiftUI
+  * Communicating with a MapKit coordinator
+  * Using Touch ID and Face ID with SwiftUI
