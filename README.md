@@ -230,3 +230,10 @@
   * Integrating MapKit with SwiftUI
   * Communicating with a MapKit coordinator
   * Using Touch ID and Face ID with SwiftUI
+* `Day 70 - Project 14, part 3`
+  * Advanced MKMapView with SwiftUI
+  * Adding annotations to MKMapView
+* `Day 71 - Project 14, part 4`
+  * Extending existing types to support ObservableObject
+  * Downloading data from Wikipedia
+  * Sorting Wikipedia results
