@@ -237,3 +237,6 @@
   * Extending existing types to support ObservableObject
   * Downloading data from Wikipedia
   * Sorting Wikipedia results
+* `Day 72 - Project 14, part 5`
+  * Making someone else’s class conform to Codable
+  * Locking our UI behind Face ID
