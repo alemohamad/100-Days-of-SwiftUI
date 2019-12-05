@@ -33,6 +33,7 @@ struct MapContentView: View {
                     Button(action: {
                         let newLocation = CodableMKPointAnnotation()
                         newLocation.title = "Example location"
+                        newLocation.subtitle = "Example subtitle"
                         newLocation.coordinate = self.centerCoordinate
                         self.locations.append(newLocation)
                         
@@ -76,6 +77,8 @@ struct MapContentView: View {
             locations = try JSONDecoder().decode([CodableMKPointAnnotation].self, from: data)
         } catch {
             print("Unable to load saved data.")
+//            print(error.localizedDescription)
+//            debugPrint(error)
         }
     }
     
