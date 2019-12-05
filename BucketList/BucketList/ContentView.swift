@@ -6,51 +6,19 @@
 //  Copyright © 2019 Ale Mohamad. All rights reserved.
 //
 
-import LocalAuthentication
-import MapKit
 import SwiftUI
+import LocalAuthentication
 
 struct ContentView: View {
-    @State private var centerCoordinate = CLLocationCoordinate2D()
-    @State private var locations = [CodableMKPointAnnotation]()
-    @State private var selectedPlace: MKPointAnnotation?
-    @State private var showingPlaceDetails = false
-    @State private var showingEditScreen = false
     @State private var isUnlocked = false
+    @State private var errorTitle = ""
+    @State private var errorMessage = ""
+    @State private var showErrorAlert = false
     
     var body: some View {
-        ZStack {
+        Group {
             if isUnlocked {
-                MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
-                    .edgesIgnoringSafeArea(.all)
-                Circle()
-                    .fill(Color.blue)
-                    .opacity(0.3)
-                    .frame(width: 32, height: 32)
-                
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            let newLocation = CodableMKPointAnnotation()
-                            newLocation.title = "Example location"
-                            newLocation.coordinate = self.centerCoordinate
-                            self.locations.append(newLocation)
-                            
-                            self.selectedPlace = newLocation
-                            self.showingEditScreen = true
-                        }) {
-                            Image(systemName: "plus")
-                        }
-                        .padding()
-                        .background(Color.black.opacity(0.75))
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .clipShape(Circle())
-                        .padding(.trailing)
-                    }
-                }
+                MapContentView()
             } else {
                 Button("Unlock Places") {
                     self.authenticate()
@@ -61,42 +29,8 @@ struct ContentView: View {
                 .clipShape(Capsule())
             }
         }
-        .alert(isPresented: $showingPlaceDetails) {
-            Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information."), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
-                self.showingEditScreen = true
-            })
-        }
-        .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
-            if self.selectedPlace != nil {
-                EditView(placemark: self.selectedPlace!)
-            }
-        }
-        .onAppear(perform: loadData)
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    func loadData() {
-        let filename = getDocumentsDirectory().appendingPathComponent("SavedPlaces")
-        
-        do {
-            let data = try Data(contentsOf: filename)
-            locations = try JSONDecoder().decode([CodableMKPointAnnotation].self, from: data)
-        } catch {
-            print("Unable to load saved data.")
-        }
-    }
-    
-    func saveData() {
-        do {
-            let filename = getDocumentsDirectory().appendingPathComponent("SavedPlaces")
-            let data = try JSONEncoder().encode(self.locations)
-            try data.write(to: filename, options: [.atomicWrite, .completeFileProtection])
-        } catch {
-            print("Unable to save data")
+        .alert(isPresented: $showErrorAlert) {
+            Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
         }
     }
     
@@ -112,12 +46,16 @@ struct ContentView: View {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        // error
+                        self.errorTitle = "Couldn't unlock"
+                        self.errorMessage = "Your face wasn't recognized."
+                        self.showErrorAlert = true
                     }
                 }
             }
         } else {
-            // no biometrics
+            self.errorTitle = "Can't unlock!"
+            self.errorMessage = "Your device doesn't support authentication with biometrics."
+            self.showErrorAlert = true
         }
     }
 }
