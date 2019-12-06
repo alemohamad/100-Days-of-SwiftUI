@@ -243,3 +243,8 @@
 * `Day 73 - Project 14, part 6`
   * Bucket List: Wrap up
   * Review for Project 14: Bucket List
+* `Day 74 - Project 15, part 1`
+  * Accessibility: Introduction
+  * Identifying views with useful labels
+  * Hiding and grouping accessibility data
+  * Reading the value of controls
