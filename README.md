@@ -252,3 +252,6 @@
   * Fixing Guess the Flag
   * Fixing Word Scramble
   * Fixing Bookworm
+* `Day 76 - Project 15, part 3`
+  * Accessibility: Wrap up
+  * Review for Project 15: Accessibility

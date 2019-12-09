@@ -34,12 +34,15 @@ struct AstronautView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 44, height: 44)
+                            .accessibility(hidden: true)
                         
                         VStack(alignment: .leading) {
                             Text(mission.displayName)
                                 .font(.headline)
                             Text(mission.formattedLaunchDate)
                         }
+                        .accessibilityElement(children: .ignore)
+                        .accessibility(label: Text("\(mission.displayName). \(mission.formattedLaunchDate)"))
                         
                         Spacer()
                     }

@@ -33,12 +33,17 @@ struct ContentView: View {
                             Text(mission.listCrew)
                         }
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibility(label: Text("\(mission.displayName). \(mission.formattedLaunchDate)"))
                 }
             }
             .navigationBarTitle("Moonshot")
-            .navigationBarItems(trailing: Button(showDates ? "Crew Names" : "Launch Dates") {
-                self.showDates.toggle()
-            })
+            .navigationBarItems(trailing:
+                Button(showDates ? "Crew Names" : "Launch Dates") {
+                    self.showDates.toggle()
+                }
+                .accessibility(hidden: true)
+            )
         }
     }
 }
