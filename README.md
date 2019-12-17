@@ -276,3 +276,7 @@
   * Building our tab bar
   * Sharing data across tabs using @EnvironmentObject
   * Dynamically filtering a SwiftUI List
+* `Day 83 - Project 16, part 5`
+  * Generating and scaling up a QR code
+  * Scanning QR codes with SwiftUI
+  * Adding options with a context menu
