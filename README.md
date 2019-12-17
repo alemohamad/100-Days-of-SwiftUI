@@ -280,3 +280,6 @@
   * Generating and scaling up a QR code
   * Scanning QR codes with SwiftUI
   * Adding options with a context menu
+* `Day 84 - Project 16, part 6`
+  * Saving and loading data with UserDefaults
+  * Posting notifications to the lock screen

@@ -21,12 +21,14 @@ struct MeView: View {
             VStack {
                 TextField("Name", text: $name)
                     .textContentType(.name)
+                    .autocapitalization(.words)
                     .font(.title)
                     .padding(.horizontal)
                 
                 TextField("Email address", text: $emailAddress)
                     .textContentType(.emailAddress)
                     .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
                     .font(.title)
                     .padding([.horizontal, .bottom])
                 
