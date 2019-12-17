@@ -272,3 +272,7 @@
   * Creating context menus
   * Scheduling local notifications
   * Adding Swift package dependencies in Xcode
+* `Day 82 - Project 16, part 4`
+  * Building our tab bar
+  * Sharing data across tabs using @EnvironmentObject
+  * Dynamically filtering a SwiftUI List
