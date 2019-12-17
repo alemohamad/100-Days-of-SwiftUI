@@ -2,6 +2,7 @@
 
 [https://www.hackingwithswift.com/100/swiftui](https://www.hackingwithswift.com/100/swiftui)
 
+* `Days 1 to 15 - Introduction to Swift`
 * `Day 16 - Project 1, part one`
   * WeSplit: Introduction
   * Understanding the basic structure of a SwiftUI app
