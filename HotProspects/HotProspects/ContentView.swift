@@ -35,6 +35,7 @@ struct ContentView: View {
                 }
         }
         .environmentObject(prospects)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

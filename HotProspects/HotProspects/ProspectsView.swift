@@ -12,6 +12,8 @@ import UserNotifications
 
 struct ProspectsView: View {
     @State private var isShowingScanner = false
+    @State private var showingSortSheet = false
+    @State private var isSortedByName = true
     
     enum FilterType {
         case none, contacted, uncontacted
@@ -43,15 +45,30 @@ struct ProspectsView: View {
         }
     }
     
+    var sortedFilteredProspects: [Prospect] {
+        if isSortedByName {
+            // by name
+            return filteredProspects.sorted(by: { $0.name < $1.name })
+        } else {
+            // by most recent
+            return filteredProspects.reversed()
+        }
+    }
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(prospect.isContacted ? .secondary : .red)
+                ForEach(sortedFilteredProspects) { prospect in
+                    HStack {
+                        if self.filter == .none {
+                            Image(systemName: prospect.isContacted ? "checkmark.circle" : "circle")
+                        }
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
                     }
                     .contextMenu {
                         Button(action: {
@@ -74,12 +91,12 @@ struct ProspectsView: View {
                 .navigationBarTitle(title)
                 .navigationBarItems(leading:
                     Button(action: {
-                        self.prospects.clearAll()
+                        self.showingSortSheet = true
                     }) {
-                        Image(systemName: "clear")
-                        Text("Clear")
+                        Image(systemName: "arrow.up.arrow.down.square")
+                        Text("Sort")
                     }
-                    , trailing:
+                , trailing:
                     Button(action: {
                         self.isShowingScanner = true
                     }) {
@@ -89,6 +106,13 @@ struct ProspectsView: View {
                 )
                 .sheet(isPresented: $isShowingScanner) {
                     CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: self.handleScan)
+                }
+                .actionSheet(isPresented: $showingSortSheet) {
+                    ActionSheet(title: Text("Sort prospects by:"), buttons: [
+                        .default(Text("Name")) { self.isSortedByName = true },
+                        .default(Text("Most Recent")) { self.isSortedByName = false },
+                        .cancel()
+                    ])
                 }
         }
     }
@@ -123,8 +147,8 @@ struct ProspectsView: View {
             
             var dateComponents = DateComponents()
             dateComponents.hour = 9
-//            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             center.add(request)

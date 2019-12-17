@@ -283,3 +283,6 @@
 * `Day 84 - Project 16, part 6`
   * Saving and loading data with UserDefaults
   * Posting notifications to the lock screen
+* `Day 85 - Project 16, part 7`
+  * Hot Prospects: Wrap up
+  * Review for Project 16: Hot Prospects
