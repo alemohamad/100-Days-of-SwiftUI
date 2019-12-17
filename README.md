@@ -255,3 +255,20 @@
 * `Day 76 - Project 15, part 3`
   * Accessibility: Wrap up
   * Review for Project 15: Accessibility
+* `Day 77 - Milestone: Projects 13-15`
+  * What you learned
+  * Key points
+  * Challenge
+* `Day 78 - Time for MapKit`
+* `Day 79 - Project 16, part 1`
+  * Hot Prospects: Introduction
+  * Reading custom values from the environment with @EnvironmentObject
+  * Creating tabs with TabView and tabItem()
+* `Day 80 - Project 16, part 2`
+  * Understanding Swift’s Result type
+  * Manually publishing ObservableObject changes
+  * Controlling image interpolation in SwiftUI
+* `Day 81 - Project 16, part 3`
+  * Creating context menus
+  * Scheduling local notifications
+  * Adding Swift package dependencies in Xcode
