@@ -287,3 +287,8 @@
 * `Day 85 - Project 16, part 7`
   * Hot Prospects: Wrap up
   * Review for Project 16: Hot Prospects
+* `Day 86 - Project 17, part 1`
+  * Flashzilla: Introduction
+  * How to use gestures in SwiftUI
+  * Making vibrations with UINotificationFeedbackGenerator and Core Haptics
+  * Disabling user interactivity with allowsHitTesting()
