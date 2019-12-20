@@ -292,3 +292,11 @@
   * How to use gestures in SwiftUI
   * Making vibrations with UINotificationFeedbackGenerator and Core Haptics
   * Disabling user interactivity with allowsHitTesting()
+* `Day 87 - Project 17, part 2`
+  * Triggering events repeatedly using a timer
+  * How to be notified when your SwiftUI app moves to the background
+  * Supporting specific accessibility needs with SwiftUI
+* `Day 88 - Project 17, part 3`
+  * Designing a single card view
+  * Building a stack of cards
+  * Moving views with DragGesture and offset()
