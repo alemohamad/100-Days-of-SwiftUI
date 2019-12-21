@@ -300,3 +300,7 @@
   * Designing a single card view
   * Building a stack of cards
   * Moving views with DragGesture and offset()
+* `Day 89 - Project 17, part 4`
+  * Coloring views as we swipe
+  * Counting down with a Timer
+  * Ending the app with allowsHitTesting()
