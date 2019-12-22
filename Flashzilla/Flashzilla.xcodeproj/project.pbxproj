@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		993EA08E23B0037E0095D1CE /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EA08D23B0037E0095D1CE /* EditCardsView.swift */; };
 		994C233423ACCA3D007D5FBA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994C233323ACCA3D007D5FBA /* Card.swift */; };
 		994C233623ACCC76007D5FBA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994C233523ACCC76007D5FBA /* CardView.swift */; };
 		99E0C0ED23AA28C60081C5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0C0EC23AA28C60081C5F9 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		993EA08D23B0037E0095D1CE /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
 		994C233323ACCA3D007D5FBA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		994C233523ACCC76007D5FBA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		99E0C0E923AA28C60081C5F9 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 				99E0C0F023AA28C60081C5F9 /* ContentView.swift */,
 				994C233523ACCC76007D5FBA /* CardView.swift */,
 				994C233323ACCA3D007D5FBA /* Card.swift */,
+				993EA08D23B0037E0095D1CE /* EditCardsView.swift */,
 				99E0C0F223AA28C70081C5F9 /* Assets.xcassets */,
 				99E0C0F723AA28C70081C5F9 /* LaunchScreen.storyboard */,
 				99E0C0FA23AA28C70081C5F9 /* Info.plist */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99E0C0ED23AA28C60081C5F9 /* AppDelegate.swift in Sources */,
+				993EA08E23B0037E0095D1CE /* EditCardsView.swift in Sources */,
 				99E0C0EF23AA28C60081C5F9 /* SceneDelegate.swift in Sources */,
 				99E0C0F123AA28C60081C5F9 /* ContentView.swift in Sources */,
 				994C233423ACCA3D007D5FBA /* Card.swift in Sources */,

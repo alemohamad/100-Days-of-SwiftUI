@@ -304,3 +304,7 @@
   * Coloring views as we swipe
   * Counting down with a Timer
   * Ending the app with allowsHitTesting()
+* `Day 90 - Project 17, part 5`
+  * Making iPhones vibrate with UINotificationFeedbackGenerator
+  * Fixing the bugs
+  * Adding and deleting cards
