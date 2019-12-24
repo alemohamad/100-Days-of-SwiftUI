@@ -40,9 +40,9 @@ struct ContentView: View {
                 
                 ZStack {
                     ForEach(0..<cards.count, id: \.self) { index in
-                        CardView(card: self.cards[index]) {
+                        CardView(card: self.cards[index]) { remove in
                             withAnimation {
-                                self.removeCard(at: index)
+                                self.removeCard(at: index, remove: remove)
                             }
                         }
                         .stacked(at: index, in: self.cards.count)
@@ -53,11 +53,19 @@ struct ContentView: View {
                 .allowsHitTesting(timeRemaining > 0)
                 
                 if cards.isEmpty {
-                    Button("Start Again", action: resetCards)
-                        .padding()
-                        .background(Color.white)
-                        .foregroundColor(.black)
-                        .clipShape(Capsule())
+                    VStack {
+                        Text("Congratulations! You answered all card questions.")
+                            .padding()
+                            .background(Color.white)
+                            .foregroundColor(.black)
+                            .clipShape(Capsule())
+                            .padding()
+                        Button("Start Again", action: resetCards)
+                            .padding()
+                            .background(Color.white)
+                            .foregroundColor(.black)
+                            .clipShape(Capsule())
+                    }
                 }
             }
             VStack {
@@ -86,7 +94,7 @@ struct ContentView: View {
                     HStack {
                         Button(action: {
                             withAnimation {
-                                self.removeCard(at: self.cards.count - 1)
+                                self.removeCard(at: self.cards.count - 1, remove: true)
                             }
                         }) {
                             Image(systemName: "xmark.circle")
@@ -101,7 +109,7 @@ struct ContentView: View {
                         
                         Button(action: {
                             withAnimation {
-                                self.removeCard(at: self.cards.count - 1)
+                                self.removeCard(at: self.cards.count - 1, remove: true)
                             }
                         }) {
                             Image(systemName: "checkmark.circle")
@@ -138,10 +146,14 @@ struct ContentView: View {
         .onAppear(perform: resetCards)
     }
     
-    func removeCard(at index: Int) {
+    func removeCard(at index: Int, remove: Bool) {
         guard index >= 0 else { return }
         
-        cards.remove(at: index)
+        let _ = cards.remove(at: index)
+        
+//        if !remove {
+//            cards.append(removedCard)
+//        }
         
         if cards.isEmpty {
             isActive = false
