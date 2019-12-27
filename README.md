@@ -311,3 +311,15 @@
 * `Day 91 - Project 17, part 6`
   * Flashzilla: Wrap up
   * Review for Project 17: Flashzilla
+* `Day 92 - Project 18, part 1`
+  * Layout and geometry: Introduction
+  * How layout works in SwiftUI
+  * Alignment and alignment guides
+  * How to create a custom alignment guide
+* `Day 93 - Project 18, part 2`
+  * Absolute positioning for SwiftUI views
+  * Understanding frames and coordinates inside GeometryReader
+  * ScrollView effects using GeometryReader
+* `Day 94 - Project 18, part 3`
+  * Layout and geometry: Wrap up
+  * Review for Project 18: Layout and geometry
