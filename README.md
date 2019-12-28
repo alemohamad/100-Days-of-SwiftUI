@@ -323,3 +323,7 @@
 * `Day 94 - Project 18, part 3`
   * Layout and geometry: Wrap up
   * Review for Project 18: Layout and geometry
+* `Day 95 - Milestone: Projects 16-18`
+  * What you learned
+  * Key points
+  * Challenge
