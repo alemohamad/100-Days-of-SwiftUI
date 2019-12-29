@@ -332,3 +332,7 @@
   * Working with two side by side views in SwiftUI
   * Using alert() and sheet() with optionals
   * Using groups as transparent layout containers
+* `Day 97 - Project 19, part 2`
+  * Building a primary list of items
+  * Making NavigationView work in landscape
+  * Creating a secondary view for NavigationView
