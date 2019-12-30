@@ -336,3 +336,7 @@
   * Building a primary list of items
   * Making NavigationView work in landscape
   * Creating a secondary view for NavigationView
+* `Day 98 - Project 19, part 3`
+  * Changing a view’s layout in response to size classes
+  * Binding an alert to an optional string
+  * Letting the user mark favorites
