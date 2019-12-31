@@ -340,3 +340,6 @@
   * Changing a view’s layout in response to size classes
   * Binding an alert to an optional string
   * Letting the user mark favorites
+* `Day 99 - Project 19, part 4`
+  * SnowSeeker: Wrap up
+  * Review for Project 19: SnowSeeker
